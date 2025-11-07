@@ -1,0 +1,32 @@
+.navigation {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  display: flex;
+  column-gap: 8px;
+}
+
+.navigation__item::before {
+  content: "·";
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  font-size: 5em;
+  line-height: 10px;
+  text-align: center;
+  color: var(--article-marker-color);
+}
+
+.navigation__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.navigation__link {
+  color: var(--article-text-primary-color);
+  line-height: 24px;
+  font-weight: 500;
+}

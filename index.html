@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- мои стили -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Youtalk | Блог</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__wrapper">
+        <img class="header__logo" src="./assets/youtalk-icon.svg" alt="Лого сайта" />
+        <img class="header__menu-icon" src="./assets/menu-icon.svg" alt="Кнопка меню сайта" />
+
+        <nav class="header__menu">
+          <div class="header__menu-items">
+            <a class="header__menu-item">О нас</a>
+            <a class="header__menu-item">Тарифы</a>
+            <a class="header__menu-item">Для бизнеса</a>
+            <a class="header__menu-item">Психологам</a>
+            <a class="header__menu-item">Сертификаты</a>
+            <button class="header__menu-item header__menu-item--has-dropdown" type="button">
+              <span>Материалы</span>
+              <img src="./assets/arrow-down.svg" alt="Выпадающий список" />
+            </button>
+            <a class="header__menu-item">FAQ</a>
+          </div>
+
+          <button class="header__button" type="button">Подобрать психолога</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- nav -->
+    <nav class="breadcrumb">
+      <div class="breadcrumb__item">
+        <span class="breadcrumb__text">Главная</span>
+        <img src="./assets/arrow-right.svg" alt="Стрелка вправо" />
+      </div>
+      <div class="breadcrumb__item">
+        <span class="breadcrumb__text">Блог</span>
+        <!-- <img src="./assets/arrow-right.svg" alt="Стрелка вправо" /> -->
+      </div>
+    </nav>
+
+    <main class="main">
+      <h1 class="heading main__heading">Блог</h1>
+
+      <div class="categories">
+        <button class="categories-button">
+          <img class="categories-icon" src="./assets/smiling-face.png" alt="Смайлик" />
+          <span class="categories-text">Все</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Самооценка и самопринятие</span>
+        </button>
+        <button class="categories-button categories__button-selected">
+          <img class="categories-icon" src="./assets/unicorn.png" alt="Смайлик" />
+          <span class="categories-text">Self</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Чувства и эмоции</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Тревога</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Упражнения</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Психология питания</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Насилие</span>
+        </button>
+        <button class="categories-button">
+          <span class="categories-text">Личное здоровье</span>
+        </button>
+      </div>
+
+      <!-- blog -->
+      <section class="main__section blog">
+        <div class="blog__container">
+          <article class="blog__card">
+            <img class="blog__image" src="./assets/blog/blog-image1.png" alt="Обложка статьи" />
+            <div class="blog__categories">
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Самооценка и самопринятие</span>
+              </div>
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Self</span>
+              </div>
+            </div>
+            <div class="blog__content">
+              <h2 class="blog__title">
+                <a href="blog.html" class="blog__link">
+                  Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</a
+                >
+              </h2>
+              <span class="blog__author">Автор: Лиза Файнтух</span>
+              <p class="blog__description">Изначально термин «эмоциональное сфер и относился...</p>
+            </div>
+            <time class="blog__date" datetime="2024-01-15">21.08.2021</time>
+          </article>
+
+          <article class="blog__card">
+            <img class="blog__image" src="./assets/blog/blog-image2.png" alt="Обложка статьи" />
+            <div class="blog__categories">
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Self</span>
+              </div>
+            </div>
+            <div class="blog__content">
+              <h2 class="blog__title">
+                <a href="blog.html" class="blog__link">
+                  Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</a
+                >
+              </h2>
+              <span class="blog__author">Автор: Лиза Файнтух</span>
+              <p class="blog__description">Изначально термин «эмоциональное сфер и относился...</p>
+            </div>
+            <time class="blog__date" datetime="2024-01-15">21.08.2021</time>
+          </article>
+
+          <article class="blog__card">
+            <img class="blog__image" src="./assets/blog/blog-image3.png" alt="Обложка статьи" />
+            <div class="blog__categories">
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Самооценка и самопринятие</span>
+              </div>
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Психология питания</span>
+              </div>
+            </div>
+            <div class="blog__content">
+              <h2 class="blog__title">
+                <a href="blog.html" class="blog__link">
+                  Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</a
+                >
+              </h2>
+              <span class="blog__author">Автор: Лиза Файнтух</span>
+              <p class="blog__description">Изначально термин «эмоциональное сфер и относился...</p>
+            </div>
+            <time class="blog__date" datetime="2024-01-15">21.08.2021</time>
+          </article>
+
+          <article class="blog__card">
+            <img class="blog__image" src="./assets/blog/blog-image3.png" alt="Обложка статьи" />
+            <div class="blog__categories">
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Самооценка и самопринятие</span>
+              </div>
+              <div class="blog__category">
+                <img class="blog__category-шсщт" src="./assets/unicorn.png" alt="Единорог!" />
+                <span class="blog__category-text">Психология питания</span>
+              </div>
+            </div>
+            <div class="blog__content">
+              <h2 class="blog__title">
+                <a href="blog.html" class="blog__link">
+                  Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</a
+                >
+              </h2>
+              <span class="blog__author">Автор: Лиза Файнтух</span>
+              <p class="blog__description">Изначально термин «эмоциональное сфер и относился...</p>
+            </div>
+            <time class="blog__date" datetime="2024-01-15">21.08.2021</time>
+          </article>
+        </div>
+
+        <button class="blog__load-more">Ещё</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <div class="footer__links">
+            <a class="footer__link" href="/about">О нас</a>
+            <a class="footer__link" href="/tariffs">Тарифы</a>
+            <a class="footer__link" href="/business">Для бизнеса</a>
+            <a class="footer__link" href="/business">Психологам</a>
+            <a class="footer__link" href="/business">FAQ</a>
+          </div>
+
+          <div class="footer__links">
+            <a class="footer__link" href="/business">Блог</a>
+            <a class="footer__link" href="/business">Вебинары</a>
+            <a class="footer__link" href="/business">Подскаст</a>
+            <a class="footer__link" href="/business">Сертификат</a>
+            <a class="footer__link" href="/business">Контакты</a>
+          </div>
+        </nav>
+
+        <div class="footer__subscription">
+          <p class="footer__subscription-title">Одно письмо в неделю со свежими новостями и акциями</p>
+          <form class="footer__form">
+            <div class="footer__form-input-group">
+              <input
+                class="footer__form-input"
+                id="footer-email"
+                type="email"
+                placeholder="Ваш e-mail"
+                autocomplete="off"
+                required
+              />
+              <button class="footer__form-button" type="submit">
+                <img src="/assets/form-arrow.svg" alt="Отправить" />
+              </button>
+            </div>
+          </form>
+          <p class="footer__subscription-privacy">
+            Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных
+            данных», а также с Политикой конфиденциальности
+          </p>
+        </div>
+
+        <section class="footer__socials">
+          <img class="footer__socials-skolovo" src="./assets/skolkovo.svg" alt="Участник Сколково" />
+          <div class="footer__socials-links">
+            <a class="footer__socials-link" href="#" aria-label="ВКонтакте">
+              <img class="footer__socials-link-icon" src="/assets//socials/vk.svg" alt="ВКонтакте" />
+            </a>
+            <a class="footer__socials-link" href="#" aria-label="Telegram">
+              <img class="footer__socials-link-icon" src="/assets//socials/tg.svg" alt="Telegram" />
+            </a>
+            <a class="footer__socials-link" href="#" aria-label="Twitter">
+              <img class="footer__socials-link-icon" src="/assets//socials/twitter.svg" alt="Twitter" />
+            </a>
+            <a class="footer__socials-link" href="#" aria-label="Дзен">
+              <img class="footer__socials-link-icon" src="/assets//socials/dzen.svg" alt="Дзен" />
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <section class="footer__other">
+        <p class="footer__copyright">©Youtalk, 2018 – 2022</p>
+        <a class="footer__legal">Юридические документы</a>
+        <a class="footer__payment">Способы оплаты</a>
+      </section>
+    </footer>
+
+    <script>
+      const categories = document.querySelector(".categories");
+
+      categories.addEventListener("click", (event) => {
+        const button = event.target.closest(".categories-button");
+        if (!button) return;
+
+        categories.querySelectorAll(".categories-button").forEach((btn) => {
+          btn.classList.remove("categories__button-selected");
+        });
+
+        button.classList.add("categories__button-selected");
+      });
+    </script>
+  </body>
+</html>

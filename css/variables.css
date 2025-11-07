@@ -1,0 +1,37 @@
+:root {
+  --header-border-color: #eff5fb;
+  --header-item-text-color: #333333;
+  --header-button-bg-color: #e3f5f5;
+  --header-button-text-color: #03b2a5;
+  --categories-button-border-color: #c1c5cd;
+  --categories-button-text-color: #333333;
+  --categories-button-selected-color: #16c8bb;
+  --blog-border-color: #eff5fb;
+  --blog-category-bg-color: #ffffffb3;
+  --blog-load-more-bg-color: #35b3a9;
+  --footer-bg-color: #2963a3;
+  --footer-form-button-bg-color: #35b3a9;
+  --footer-socials-border-color: #9d9d9d4d;
+
+  --article-text-primary-color: #333333;
+  --article-text-secondary-color: #494949;
+  --article-text-link-color: #2963a3;
+  --article-marker-color: #03b2a5;
+
+  --article-blockquote-bg-color: #f3f7fe;
+
+  --article-exercise-yellow-bg-color: #fefaec;
+  --article-exercise-orange-bg-color: #fff3eb;
+  --article-exercise-green-bg-color: #03b2a51a;
+  --article-form-blue-bg-color: #e6f0fd;
+  --article-form-bg-color: #e6f0fd;
+  --article-button-color: #35b3a9;
+
+  --chip-bg-color: #f3f4f8b3;
+
+  --border-color: #dedede;
+
+  --mentor-other-text-color: #a2a7b1;
+
+  --video-sessions-text-color: #2963a3;
+}

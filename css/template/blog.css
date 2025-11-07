@@ -1,0 +1,142 @@
+.blog__container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+}
+
+.blog__card {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid var(--blog-border-color);
+  overflow: hidden;
+}
+
+.blog__image {
+  display: block;
+  width: 100%;
+  height: 206px;
+  object-fit: cover;
+  object-position: center 100%;
+}
+
+.blog__categories {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.blog__category {
+  width: fit-content;
+  background-color: var(--blog-category-bg-color);
+  padding: 6px 8px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.blog__category-text {
+  font-weight: 600;
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+
+.blog__category:not(:first-child) {
+  margin-top: 8px;
+}
+
+.blog__content {
+  margin: 16px 16px 0px 16px;
+  height: 220px;
+}
+
+.blog__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.blog__link {
+  color: black;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.blog__link:hover {
+  text-decoration-color: black;
+}
+
+.blog__author {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.blog__description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.blog__date {
+  display: block;
+  margin: 8px 16px 16px 16px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.blog__load-more {
+  display: block;
+  margin: 28px auto;
+  padding: 12px 0;
+  width: 182px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: var(--blog-load-more-bg-color);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .blog__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .blog__card:first-child,
+  .blog__card:nth-child(2) {
+    grid-column: span 2;
+  }
+
+  .blog__image {
+    height: 404px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog__container {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+
+  .blog__card {
+    grid-column: span 4;
+  }
+
+  .blog__card:first-child,
+  .blog__card:nth-child(2) {
+    grid-column: span 6;
+  }
+
+  .blog__image {
+    height: 206px;
+  }
+  .blog__image:first-child,
+  .blog__image::nth-child(2) {
+    height: 260px;
+  }
+}
